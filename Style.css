@@ -1,0 +1,53 @@
+:root {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.title {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    background: linear-gradient(90deg, #80ff80 0%,cyan 16%, magenta 50%, yellow 83%);
+    background-size: 300% 300%;
+    animation: toggle 5s infinite;
+}
+
+@keyframes toggle {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 150% 200%;
+    }
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    animation: toggle 5s infinite;
+}
+
+.text > h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.text > h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.text > p {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
